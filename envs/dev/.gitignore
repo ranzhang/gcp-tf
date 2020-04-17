@@ -1,0 +1,5 @@
+.terraform
+terraform-252601-161286279508.json
+provider.tf 
+terraform.tfstate
+terraform.tfstate.backup
