@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"dev.gcp_compute_k3s","Source":"../../modules/compute","Dir":"modules\\compute"},{"Key":"dev.gcp_vpc","Source":"../../modules/network","Dir":"modules\\network"},{"Key":"dev","Source":"./envs/dev","Dir":"envs\\dev"},{"Key":"","Source":"","Dir":"."}]}
