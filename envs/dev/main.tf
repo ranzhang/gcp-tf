@@ -1,4 +1,4 @@
-module "gcp_vpc" {
+module "gcp-vpc" {
    source   = "../../modules/network"
    region   = "us-central1"
    zone     = "us-central1-a"
@@ -6,11 +6,11 @@ module "gcp_vpc" {
    env      = "dev"
 }
 
-module "gcp_compute_k3s" {
+module "gcp-compute" {
    source   = "../../modules/compute"
    region   = "us-central1"
    zone     = "us-central1-a"
    company  = "acme"
    env      = "dev"
-   vpc_name	= "${module.gcp_vpc.vpc_name}"
+   vpc_name	= "${module.gcp-vpc.vpc_name}"
 }
