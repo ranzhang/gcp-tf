@@ -3,7 +3,7 @@ module "gcp_vpc" {
    region   = "us-central1"
    zone     = "us-central1-a"
    company  = "acme"
-   env		= "dev"
+   env      = "dev"
 }
 
 module "gcp_compute_k3s" {
@@ -11,6 +11,6 @@ module "gcp_compute_k3s" {
    region   = "us-central1"
    zone     = "us-central1-a"
    company  = "acme"
-   env		= "dev"
+   env      = "dev"
    vpc_name	= "${module.gcp_vpc.vpc_name}"
 }
