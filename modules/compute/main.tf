@@ -10,7 +10,7 @@ resource "google_compute_instance" "instances" {
       }
    }
    network_interface {
-      network = "${var.vpc_name}"
+      network = "${var.vpc-name}"
       access_config {}
    }
    service_account {

@@ -1,12 +1,12 @@
 ####create a vpc, with firewall rules
 
-resource "google_compute_network" "vpc_network" {
+resource "google_compute_network" "vpc-network" {
   name = "${var.company}-${var.env}"
 }
 
 resource "google_compute_firewall" "allow-internal" {
   name    = "${var.company}-${var.env}-fw-allow-internal"
-  network = "${google_compute_network.vpc_network.name}"
+  network = "${google_compute_network.vpc-network.name}"
   allow {
     protocol = "icmp"
   }
@@ -22,7 +22,7 @@ resource "google_compute_firewall" "allow-internal" {
 
 resource "google_compute_firewall" "allow-http" {
   name    = "${var.company}-${var.env}-fw-allow-http"
-  network = "${google_compute_network.vpc_network.name}"
+  network = "${google_compute_network.vpc-network.name}"
   allow {
     protocol = "tcp"
     ports    = ["80"]

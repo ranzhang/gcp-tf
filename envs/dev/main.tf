@@ -12,5 +12,5 @@ module "gcp-compute" {
    zone     = "us-central1-a"
    company  = "acme"
    env      = "dev"
-   vpc_name	= "${module.gcp-vpc.vpc_name}"
+   vpc-name	= "${module.gcp-vpc.vpc-name}"
 }

@@ -6,4 +6,4 @@ variable "company" {}
 
 variable "env" {}
 
-variable "vpc_name" {}
+variable "vpc-name" {}
